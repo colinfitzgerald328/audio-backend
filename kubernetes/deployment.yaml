@@ -16,7 +16,7 @@ spec:
       - name: audio-backend-app
         # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
         # Replace $GCLOUD_PROJECT with your project ID.
-        image: gcr.io/athletics-hub/github.com/colinfitzgerald328/audio-backend
+        image: us-central1-docker.pkg.dev/athletics-hub/audio-backend-repo/audio-backend-gke:latest
         # This app listens on port 8080 for web traffic by default.
         ports:
         - containerPort: 8080
@@ -25,10 +25,10 @@ spec:
             value: "8080"
         resources:
           requests:
-            memory: "1Gi"
-            cpu: "500m"
-            ephemeral-storage: "1Gi"
+            memory: "16Gi"
+            cpu: "4"
+            ephemeral-storage: "16Gi"
           limits:
-            memory: "1Gi"
-            cpu: "500m"
-            ephemeral-storage: "1Gi"
+            memory: "16Gi"
+            cpu: "4"
+            ephemeral-storage: "16Gi"
