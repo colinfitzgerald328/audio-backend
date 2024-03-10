@@ -14,11 +14,7 @@ spec:
     spec:
       containers:
       - name: audio-backend-app
-        # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
-        # code comment
-        # Replace $GCLOUD_PROJECT with your project ID.
         image: gcr.io/athletics-hub/github.com/colinfitzgerald328/audio-backend
-        # This app listens on port 8080 for web traffic by default.
         ports:
         - containerPort: 8080
         env:
