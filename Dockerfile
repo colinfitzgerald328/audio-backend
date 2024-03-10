@@ -7,6 +7,8 @@ ENV APP_HOME /audio-backend
 WORKDIR $APP_HOME
 COPY . ./
 
+RUN apt-get -y ffmpeg 
+
 # Install production dependencies.
 RUN pip install -r requirements.txt
 
