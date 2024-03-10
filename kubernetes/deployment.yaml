@@ -17,7 +17,7 @@ spec:
         # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
         # code comment
         # Replace $GCLOUD_PROJECT with your project ID.
-        image: us-central1-docker.pkg.dev/athletics-hub/audio-backend-repo/audio-backend-gke@sha256:e98c607a3482a0d4693b9a23954d8f11d68332b346438fddc2a404f8df9d6a31
+        image: gcr.io/athletics-hub/github.com/colinfitzgerald328/audio-backend
         # This app listens on port 8080 for web traffic by default.
         ports:
         - containerPort: 8080
