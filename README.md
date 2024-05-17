@@ -5,7 +5,7 @@ You can try for yourself like so:
 Bash command: 
 
 ```bash
-curl -X POST -F "file=@/path/to/your/audio/file.mp3" https://athleticshub.cloud/transcribe
+curl -X POST -F "file=@/path/to/your/audio/file.mp3" https://audio-backend-iyuk3izvyq-uc.a.run.app/transcribe
 ```
 
 Python script: 
@@ -17,7 +17,7 @@ import requests
 file_path = '/path/to/your/audio/file.mp3'
 
 # URL of the transcription API endpoint
-transcribe_url = 'https://athleticshub.cloud/transcribe'
+transcribe_url = 'https://audio-backend-iyuk3izvyq-uc.a.run.app/transcribe'
 
 # Create a dictionary with the file to be uploaded
 files = {'file': open(file_path, 'rb')}
